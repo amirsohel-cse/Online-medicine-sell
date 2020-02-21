@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use mysql_xdevapi\Table;
 
 class OrderController extends Controller
 {
@@ -18,6 +19,11 @@ class OrderController extends Controller
             -> with('all_order_info',$all_order_info);
         return view('admin_layout')->with('admin.manage_order',$manage_order);
     }
+    public function manage_prescription() {
+        $prescriptions = DB::table('tb1_prescription')->get();
+
+        return view('admin.manage_prescription')->with('prescriptions',$prescriptions);
+    }
     public function view_order($order_id)
     {
         $order_by_id = DB::table('tb1_order')
@@ -31,7 +37,33 @@ class OrderController extends Controller
         $view_order = view('admin.view_order')
             -> with('order_by_id',$order_by_id);
         return view('admin_layout')->with('admin.view_order',$view_order);
+    }
+
+
+    public function confirm($order_id)
+    {
+        $co="Confirmed";
+        $order_confirm = DB::table('tb1_order')
+            ->where('order_id','=',$order_id)
+           -> update(['order_status' => "Confirmed"]);
+
+          return redirect()->back();
+
 
     }
+    public function delivered($order_id)
+    {
+        $co="Confirmed";
+        $order_confirm = DB::table('tb1_order')
+            ->where('order_id','=',$order_id)
+            -> update(['order_status' => "Delivered"]);
+
+        return redirect()->back();
+
+
+    }
+
+
+
 
 }

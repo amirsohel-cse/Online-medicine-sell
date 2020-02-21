@@ -35,27 +35,34 @@
                     <tr>
                         <th>Product ID</th>
                         <th>Product Name</th>
-                        <th>Product short Description</th>
-                        <th>Product long Description</th>
-                        <th>Product Image</th>
-                        <th>Product Price</th>
                         <th>Category Name</th>
-                        <th>Manufacture Name</th>
+                        <th>Product Price</th>
+                        <th>Generic</th>
+                        <th>type</th>
+                        <th>quantity</th>
+                        <th>Product Image</th>
+                        <th>Pieces Per Pata</th>
+                        <th>Dose</th>
+                        <th>Size</th>
                         <th>Status</th>
                         <th>Actions</th>
                     </tr>
                     </thead>
+                    <tbody>
                     @foreach($all_product_info as $v_product)
-                        <tbody>
+
                         <tr>
                             <td>{{$v_product->product_id}}</td>
                             <td class="center">{{$v_product->product_name}}</td>
-                            <td class="center">{{$v_product->product_short_description}}</td>
-                            <td class="center">{{$v_product->product_long_description}}</td>
-                            <td><img src="{{URL:: to($v_product->product_image)}}" style="height:80px; width: 80px;"> </td>
-                            <td class="center">{{$v_product->product_price}}</td>
                             <td class="center">{{$v_product->category_name}}</td>
-                            <td class="center">{{$v_product->manufacture_name}}</td>
+                            <td class="center">{{$v_product->product_price}}</td>
+                            <td class="center">{{$v_product->generic}}</td>
+                            <td class="center">{{$v_product->type}}</td>
+                            <td class="center">{{$v_product->quantity}}</td>
+                            <td><img src="{{URL:: to($v_product->product_image)}}" style="height:80px; width: 80px;"> </td>
+                            <td class="center">{{$v_product->pieces_per_pata}}</td>
+                            <td class="center">{{$v_product->dose}}</td>
+                            <td class="center">{{$v_product->size}}</td>
 
                             <td class="center">
                                 @if($v_product->publication_status==1)
@@ -84,9 +91,9 @@
                         </tr>
 
 
-
-                        </tbody>
                     @endforeach
+                        </tbody>
+
                 </table>
             </div>
         </div><!--/span-->

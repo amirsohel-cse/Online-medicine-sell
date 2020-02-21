@@ -26,7 +26,7 @@
                 Your Full Name, Phone Number, <br>
                 Full Address with Flat number, <br>
                 Item Name, Type, Dose/Size, Quantity <br>
-                <b>*Repeat line 2 for all products*</b>
+                <b>*Repeat line 3 for all products*</b>
             </p>
             <p>
                 Please include Product Type (injection, tablet, etc.) and Dose, Strength or Size in the product description.
@@ -44,7 +44,7 @@
             </p>
             <div class="center">
                 <i class="fa fa-mobile text-md"></i>
-                <b>SMS:</b> 01300899200 , 01300899199
+                <b>SMS:</b> 01788882131 , 01300899199
                 <br>
 
                 <a class="hidden-xs" href="https://www.facebook.com/Medi-Zone-BD-103311614439996/" target="_blank">

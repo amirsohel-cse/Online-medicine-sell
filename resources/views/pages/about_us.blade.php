@@ -2,22 +2,53 @@
 @section('content')
 
 
+
 <div class="row">
-    <div class="col-md-12">
-        <h3 class="h1 heading-primary mt-xl" style="color: red">ABOUT <strong>US</strong></h3>
-        <br>
-        <br>
-        <p class="center-block" style="font-size: large">
-            MedizoneBD is Bangladesh’s premier market place where user can buy medicines online and health care products from a wide range of categories such as prescription medicine,
-            over the counter medicine, motherhood and pregnancy products and other health care products, baby care products and other health and wellness products.
-
-            <br>
-            <br>
-            <br>
-            <br>
-        </p>
-
-    </div>
+        <div class="col-sm-12 center">
+        <img src="{{URL:: to('frontend/images/home/logo.png')}}" alt="Logo" height="250px" style="align-items: center">
+        </div>
 </div>
+        <pre class="center-block" style="font-size: large">
+            Medizone BD একটি স্বনামধন্য অনলাইন ভিত্তিক মেডিসিন শপ।
+            আমারা সব ধরনের ওষুধ খুব অল্প সময়ের মধ্যে হোম ডেলিভারি দিয়ে থাকি।
+
+            আমাদের কাছে যে সকল পণ্য পাবেনঃ
+            ১. দেশি-বিদেশি সব ধরনের ঔষধ
+            ২. বেবি প্রোডাক্ট সমূহ
+            ৩. মেয়েদের সিক্রেট প্রোডাক্ট সমূহ
+            ৪. সেক্স প্রোডাক্টস
+
+            কিভাবে অর্ডার করবেন?
+            ১. medizonebd ওয়েবসাইটের মাধ্যমে
+            ২. কল করে
+            ৩. ফেসবুকের মাধ্যমে
+            ৪. মোবাইল এপের মাধ্যমে (এই সার্ভিসটি এখন প্রক্রিয়াধীন রয়েছে)
+
+            ডেলিভারি চার্জঃ
+            ১. নরমাল ডেলিভারি ৩০ টাকা (২৪ ঘন্টা)
+            ২. ইমার্জেন্সি ডেলিভারি ১০০ টাকা (২ ঘন্টা)
+
+            নরমাল ডেলিভারির ক্ষেত্রে এই দিনে পণ্য ডেলিভারি পেতে দুপুর ৩টার আগে অর্ডার করুন।
+            দুপুর ৩টার পরে অর্ডার করলে পরবর্তি ২৪ ঘন্টার মধ্য পণ্য ডেলিভারি পাবেন।
+
+            সার্ভিস এরিয়াঃ
+            ১. যাত্রাবাড়ি ও তার আশেপাশের এলাকা
+            ২. মিরপুর ও তার আশেপাশের এলাকা
+            (খুব শিঘ্রই পুরো ঢাকা শহর আমাদের সার্ভিসটি চালু হতে যাচ্ছে ইনশাআল্লাহ)
+
+            * ৬০০টাকার বেশি পণ্য অর্ডার করলে ডেলিভারি চার্জ সম্পূর্ণ ফ্রি***
+        </pre>
+ <br>
+<br>
+<br>
+<br>
+
+
+
+{{--        <div class="row pull-left">--}}
+{{--            <div class="col-sm-12 pull">--}}
+{{--               --}}
+{{--            </div>--}}
+{{--        </div>--}}
 
     @endsection

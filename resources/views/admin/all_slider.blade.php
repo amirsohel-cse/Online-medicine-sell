@@ -33,9 +33,9 @@
                 <table class="table table-striped table-bordered bootstrap-datatable datatable">
                     <thead>
                     <tr>
-                        <th>Product ID</th>
-                        <th>Product Image</th>
-                        <th>Status</th>
+                        <th>Slider ID</th>
+                        <th>Slider Image</th>
+                       <th>Status</th>
                         <th>Actions</th>
                     </tr>
                     </thead>

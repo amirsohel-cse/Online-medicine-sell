@@ -17,13 +17,16 @@ class CreateProductsTable extends Migration
             $table->bigIncrements('product_id');
             $table->string('product_name');
             $table->integer('category_id');
-            $table->integer('manufacture_id');
-            $table->longText('product_short_description');
-            $table->longText('product_long_description');
-            $table->float('product_price');
+            $table->string('product_price');
+            $table->string('generic');
+            $table->string('type');
+            $table->string('quantity');
             $table->string('product_image');
-            $table->string('product_size');
-            $table->string('product_color');
+            $table->string('pieces_per_pata');
+            $table->string('dose');
+            $table->string('size');
+
+
             $table->integer('publication_status');
 
             $table->timestamps();

@@ -27,25 +27,6 @@
                         <td class="center">{{$v_order -> customer_mobile_number}}</td>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     </tr>
                     </tbody>
                 </table>

@@ -15,7 +15,6 @@
 //               echo "<pre>";
 //               print_r($contents);
 //            echo "</pre>";
-
             ?>
             <table class="table table-condensed">
                 <thead>
@@ -29,7 +28,7 @@
                     <td></td>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody style="background-color: white">
 
                 <tr>
                     <?php
@@ -84,7 +83,7 @@
         <div class="heading">
             <h3>What would you like to do next?</h3>
         </div>
-        <div class="row">
+        <div class="row" >
 {{--            <div class="col-sm-6">--}}
 {{--                <div class="chose_area">--}}
 {{--                    <ul class="user_option">--}}
@@ -139,8 +138,8 @@
 {{--                    <a class="btn btn-default check_out" href="">Continue</a>--}}
 {{--                </div>--}}
 {{--            </div>--}}
-            <div class="col-sm-8">
-                <div class="total_area">
+            <div class="col-sm-8" >
+                <div class="total_area"style="background-color: white">
                     <ul>
                         <li>Cart Sub Total <span>{{\Cart::getSubTotal()}} Tk</span></li>
                         <li>Shipping Cost <span>60 Tk</span></li>

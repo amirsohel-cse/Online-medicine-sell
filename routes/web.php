@@ -35,7 +35,7 @@ Route:: get('/view_product/{product_id}','HomeController@product_details_by_id')
 
 // Cart routes are here
 Route:: post('/add_to_cart','CartController@add_to_cart');
-Route:: post('/add_to_cart_home/{id}','CartController@add_to_cart_home');
+Route:: get('/add_to_cart_home/','CartController@add_to_cart_home');
 Route:: get('/show_cart','CartController@show_cart');
 Route:: get('/delete_to_cart/{id}','CartController@delete_to_cart');
 Route:: post('/update_cart/{id}','CartController@update_cart');
@@ -100,12 +100,16 @@ Route:: get('/delete_slider/{slider_id}','SliderController@delete_slider');
 
 // Order Routes are here
 Route:: get('/manage_order ','OrderController@manage_order');
+Route:: get('/manage_prescription ','OrderController@manage_prescription');
 Route:: get('/view_order/{view_id} ','OrderController@view_order');
+Route:: get('/confirm/{view_id} ','OrderController@confirm');
+Route:: get('/delivered/{view_id} ','OrderController@delivered');
 
 //Search Controller
 Route:: post('/search ','HomeController@search');
 
 //Footer Routs are here
+Route:: get('/modal/','HomeController@modal');
 
 Route:: get('/about_us','HomeController@about_us');
 Route::get('/terms','HomeController@terms');

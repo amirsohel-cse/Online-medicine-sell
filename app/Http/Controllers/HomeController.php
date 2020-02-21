@@ -12,18 +12,18 @@ class HomeController extends Controller
 {
     public function index()
     {
-           $all_published_product = DB::table('tb1_products')
-            ->join('tb1_category','tb1_products.category_id','=','tb1_category.category_id')
-            ->join('tb1_manufacture','tb1_products.manufacture_id','=','tb1_manufacture.manufacture_id')
-            -> select('tb1_products.*','tb1_category.category_name','tb1_manufacture.manufacture_name')
-            ->where('tb1_products.publication_status',1)
-            ->get();
-
-        $manage_published_product = view('pages.home_content')
-            -> with('all_published_product',$all_published_product);
-        return view('layout')->with('pages.home_content',$manage_published_product);
-        //return view('pages.home_content');
+//           $all_published_product = DB::table('tb1_products')
+//            ->join('tb1_category','tb1_products.category_id','=','tb1_category.category_id')
+//            -> select('tb1_products.*','tb1_category.category_name')
+//            ->where('tb1_products.publication_status',1)
+//            ->get();
+//
+//        $manage_published_product = view('pages.home_content')
+//            -> with('all_published_product',$all_published_product);
+//        return view('layout')->with('pages.home_content',$manage_published_product);
+        return view('pages.home_content');
     }
+
     public function show_product_by_category($category_id)
     {
         $product_by_category = DB::table('tb1_products')
@@ -31,7 +31,7 @@ class HomeController extends Controller
             -> select('tb1_products.*','tb1_category.category_name')
             ->where('tb1_category.category_id',$category_id)
             ->where('tb1_products.publication_status',1)
-            ->get();
+            ->paginate(12);
 
         $manage_product_by_category = view('pages.product_by_category')
             -> with('product_by_category',$product_by_category);
@@ -39,27 +39,26 @@ class HomeController extends Controller
 
     }
 
-    public function show_product_by_manufacture($manufacture_id)
-    {
-        $product_by_manufacture = DB::table('tb1_products')
-            ->join('tb1_manufacture','tb1_products.manufacture_id','=','tb1_manufacture.manufacture_id')
-            -> select('tb1_products.*','tb1_manufacture.manufacture_name')
-            ->where('tb1_manufacture.manufacture_id',$manufacture_id)
-            ->where('tb1_products.publication_status',1)
-            ->limit(18)
-            ->get();
-
-        $manage_product_by_manufacture = view('pages.product_by_manufacture')
-            -> with('product_by_manufacture',$product_by_manufacture);
-        return view('layout')->with('pages.product_by_manufacture',$manage_product_by_manufacture);
-
-    }
+//    public function show_product_by_manufacture($manufacture_id)
+//    {
+//        $product_by_manufacture = DB::table('tb1_products')
+//            ->join('tb1_manufacture','tb1_products.manufacture_id','=','tb1_manufacture.manufacture_id')
+//            -> select('tb1_products.*','tb1_manufacture.manufacture_name')
+//            ->where('tb1_manufacture.manufacture_id',$manufacture_id)
+//            ->where('tb1_products.publication_status',1)
+//            ->limit(18)
+//            ->get();
+//
+//        $manage_product_by_manufacture = view('pages.product_by_manufacture')
+//            -> with('product_by_manufacture',$product_by_manufacture);
+//        return view('layout')->with('pages.product_by_manufacture',$manage_product_by_manufacture);
+//
+//    }
     public function product_details_by_id($product_id)
     {
         $product_by_details = DB::table('tb1_products')
             ->join('tb1_category','tb1_products.category_id','=','tb1_category.category_id')
-            ->join('tb1_manufacture','tb1_products.manufacture_id','=','tb1_manufacture.manufacture_id')
-            -> select('tb1_products.*','tb1_category.category_name','tb1_manufacture.manufacture_name')
+            -> select('tb1_products.*','tb1_category.category_name')
             ->where('tb1_products.product_id',$product_id)
             ->where('tb1_products.publication_status',1)
             ->first();
@@ -76,9 +75,11 @@ class HomeController extends Controller
         $all_product_info = DB::table('tb1_products')
             ->where('product_name','LIKE','%'.$data.'%')
             ->get();
-        $manage_product = view('pages.search_result')
-            -> with('all_product_info',$all_product_info);
-        return view('layout')->with('pages.search_result',$manage_product);
+            $manage_product = view('pages.search_result')
+                ->with('all_product_info', $all_product_info);
+            return view('layout')->with('pages.search_result', $manage_product);
+
+
     }
     public function contact()
     {
@@ -132,7 +133,6 @@ class HomeController extends Controller
        Session::put('messege','Updated successfully !!' );
        return Redirect::to('profile');
 
-
    }
    public function my_orders(){
         $customer_id =Session::get('customer_id');
@@ -162,6 +162,18 @@ class HomeController extends Controller
     }
     public function message_order(){
         return view('pages.messege_order');
+    }
+    public function modal(Request $request)
+    {
+        if($request->has('id'))
+
+        $product_id= $request->id;
+        $product_info= DB::table('tb1_products')
+            ->where('product_id',$product_id)
+            ->first();
+
+        return  json_encode($product_info);
+
     }
 
 

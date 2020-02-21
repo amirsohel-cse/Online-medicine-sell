@@ -1,10 +1,11 @@
-<section id="slider"><!--slider-->
-    <div class="container">
+<section id="slider" ><!--slider-->
+    <div class="container" style="margin-left: -15px">
         <div class="row">
 
-            <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators" >
                     <?php
                     $all_published_slider=DB::table('tb1_slider')->where('publication_status',1)->get(); ?>
                     @foreach( $all_published_slider as $v_slider )
@@ -16,7 +17,7 @@
                 <div class="carousel-inner" role="listbox">
                     @foreach( $all_published_slider as $v_slider )
                         <div class="item {{ $loop->first ? ' active' : '' }}" >
-                            <img src="{{ $v_slider->slider_image }}" style="width: 100%;height: 445px">
+                            <img src="{{ $v_slider->slider_image }}" style="width: 100%;height: 100%">
                         </div>
                     @endforeach
                 </div>

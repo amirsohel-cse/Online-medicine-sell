@@ -22,12 +22,15 @@ class ProductController extends Controller
         $data = array();
         $data['product_name']=$request->product_name;
         $data['category_id']=$request->category_id;
-        $data['manufacture_id']=$request->manufacture_id;
-        $data['product_short_description']=$request->product_short_description;
-        $data['product_long_description']=$request->product_long_description;
+        $data['generic']=$request->generic;
+        $data['type']=$request->type;
         $data['product_price']=$request->product_price;
-        $data['product_size']=$request->product_size;
-        $data['product_color']=$request->product_color;
+        $data['size']=$request->product_size;
+        $data['dose']=$request->dose;
+        $data['quantity']=$request->quantity;
+        $data['pieces_per_pata']=$request->pieces_per_pata;
+
+
         $data['publication_status']=$request->publication_status;
 
         $image = $request->file('product_image');
@@ -59,8 +62,7 @@ class ProductController extends Controller
         $this->AdminAuthCheck();
         $all_product_info = DB::table('tb1_products')
             ->join('tb1_category','tb1_products.category_id','=','tb1_category.category_id')
-            ->join('tb1_manufacture','tb1_products.manufacture_id','=','tb1_manufacture.manufacture_id')
-            -> select('tb1_products.*','tb1_category.category_name','tb1_manufacture.manufacture_name')
+            -> select('tb1_products.*','tb1_category.category_name')
             ->get();
         $manage_product = view('admin.all_product')
             -> with('all_product_info',$all_product_info);
@@ -84,30 +86,63 @@ class ProductController extends Controller
     {
         $this->AdminAuthCheck();
         $product_info= DB::table('tb1_products')->where('product_id',$product_id)->first();
-        $product_info = view('admin.edit_category')
+        $product_info = view('admin.edit_product')
             -> with('product_info',$product_info);
         return view('admin_layout')->with('admin.edit_product',$product_info);
 
         //return view('admin.edit_category');
     }
-//    public function update_product($product_id,Request $request)
-//    {
-//        $data=array();
-//        $data['product_name']= $request->category_name;
-//        $data['product_description']= $request->category_description;
-//        $data['publication_status']= $request->publication_status;
-//
-//        DB::table('tb1_products') -> where('product_id',$product_id)->update($data);
-//        Session::put('message','Category update succesfully !! ');
-//
-//        return Redirect::to('/all_product');
-//    }
+    public function update_product($product_id,Request $request)
+    {
+        $this->AdminAuthCheck();
+        $data = array();
+        $data['product_name']=$request->product_name;
+        $data['category_id']=$request->category_id;
+        $data['generic']=$request->generic;
+        $data['type']=$request->type;
+        $data['product_price']=$request->product_price;
+        $data['size']=$request->product_size;
+        $data['dose']=$request->dose;
+        $data['quantity']=$request->quantity;
+        $data['pieces_per_pata']=$request->pieces_per_pata;
+        $data['publication_status']=$request->publication_status;
+
+
+        if($request->image_url != null)
+        $data['product_image']= $request->image_url;
+        else{
+
+        $image = $request->file('product_image');
+        if($image){
+            $image_name= Str::random(40);
+            $ext = strtolower($image->getClientOriginalExtension());
+            $image_full_name = $image_name.'.'.$ext;
+            $upload_path = 'product_image/';
+            $image_url = $upload_path.$image_full_name;
+            $success = $image->move($upload_path,$image_full_name);
+            if($success){
+                $data['product_image']= $image_url;
+
+                DB::table('tb1_products')->where('product_id','=',$product_id)->update($data);
+                Session::put('message','Product Updated successfully !!' );
+                return Redirect::to('/all_product');
+            }
+
+        }
+        }
+
+
+        DB::table('tb1_products')->where('product_id','=',$product_id)->update($data);
+        Session::put('message','Product Updated successfully without image!!' );
+        return Redirect::to('/all_product');
+    }
     public function delete_product($category_id)
     {
         DB::table('tb1_products')-> where('product_id',$category_id)->delete();
         Session::put('message','product Deleted succesfully !! ');
         return Redirect::to('/all_product');
     }
+
     public function AdminAuthCheck()
     {
         $admin_id=Session::get('admin_id');

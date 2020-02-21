@@ -41,8 +41,9 @@
                         <th>Actions</th>
                     </tr>
                     </thead>
+                    <tbody>
                     @foreach($all_order_info as $v_order)
-                        <tbody>
+
                         <tr>
                             <td>{{$v_order->order_id}}</td>
                             <td class="center">{{$v_order->customer_name}}</td>
@@ -57,31 +58,31 @@
 {{--                                @endif--}}
 {{--                            </td>--}}
                             <td class="center">
-                                @if($v_order->order_status==1)
-                                    <a class="btn btn-danger" href="{{URL::to('/unactive_order/'.$v_order->order_id)}}">
-                                        <i class="halflings-icon white thumbs-down"></i>
-                                    </a>
-                                @else
-                                    <a class="btn btn-success" href="{{URL::to('/active_order/'.$v_order->order_id)}}">
+
+                                    <a class="btn btn-danger" href="{{URL::to('/confirm/'.$v_order->order_id)}}">
                                         <i class="halflings-icon white thumbs-up"></i>
                                     </a>
-                                @endif
+
+                                    <a class="btn btn-success" href="{{URL::to('/delivered/'.$v_order->order_id)}}">
+                                        <i class="halflings-icon white ok-sign"></i>
+                                    </a>
+
                                 <a class="btn btn-info" href="{{URL::to('/edit_order/'.$v_order->order_id)}}">
                                     <i class="halflings-icon white edit"></i>
                                 </a>
                                  <a class="btn btn-info" href="{{URL::to('/view_order/'.$v_order->order_id)}}">
-                                        <i class="halflings-icon white edit"></i>
+                                        <i class="halflings-icon white eye-open"></i>
                                  </a>
                                 <a class="btn btn-danger" href="{{URL::to('/delete_order/'.$v_order->order_id)}}" id="delete">
                                     <i class="halflings-icon white trash"></i>
                                 </a>
+
                             </td>
                         </tr>
 
 
-
-                        </tbody>
                     @endforeach
+                    </tbody>
                 </table>
             </div>
         </div><!--/span-->

@@ -115,8 +115,7 @@ class CheckoutController extends Controller
         if($payment_method == 'handcash')
         {
             \Cart::clear();
-            return view('/pages.handcash');
-
+            return view('pages.handcash')->with('order_id',$order_id);
         }
         else
         {
@@ -128,5 +127,4 @@ class CheckoutController extends Controller
         Session::flush();
         return Redirect::to('/');
     }
-
 }

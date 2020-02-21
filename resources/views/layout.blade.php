@@ -13,7 +13,10 @@
     <link href="{{asset('frontend/css/animate.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/css/main.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/css/responsive.css')}}" rel="stylesheet">
+
     <!--[if lt IE 9]>
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
@@ -26,8 +29,28 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head><!--/head-->
 <style type="text/css">
+    input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        color:black;
+        background-color: white;
+        background-image: url('https://img.icons8.com/material/4ac144/256/search.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+        width: 100%;
+    }
     .paymentWrap {
         padding: 50px;
     }
@@ -92,128 +115,168 @@
         outline: none !important;
     }
 </style>
+<script>
+    function openNav() {
 
-<body>
-{{--<header id="header"><!--header-->--}}
-{{--    <div class="header_top"><!--header_top-->--}}
-{{--        <div class="container">--}}
-{{--            <div class="row">--}}
-{{--                <div class="col-sm-6">--}}
-{{--                    <div class="contactinfo">--}}
-{{--                        <ul class="nav nav-pills">--}}
-{{--                            <li><a href="#"><i class="fa fa-phone"></i> +8801839351960</a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-envelope"></i> support@medizonebd.com</a></li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="col-sm-6">--}}
-{{--                    <div class="social-icons pull-right">--}}
-{{--                        <ul class="nav navbar-nav">--}}
-{{--                            <li><a href="www.facebook.com" target="_blank" ><i class="fa fa-facebook" ></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div><!--/header_top-->--}}
+        if(document.getElementById("mySidenav").style.width == "75%")
+        {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "rgba(0,0,0,0)";
+        }
+        else {
+            document.getElementById("mySidenav").style.width = "75%";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        // document.getElementById("flipkart-navbar").style.width = "50%";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
 
-    <nav class="navbar-fixed-top" style="background-color: white;height: 100px;border: solid 1px;"><!--header-middle-->
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "rgba(0,0,0,0)";
+    }
+</script>
+<body style="background-color: #d9d9d9">
+
+
+<div id="flicker-nab" class="navbar-fixed-top" style="background-color: #1E7145;">
+    <div class="container-fluid">
+
+        <div class="row row2 container-fluid " >
+            <div class="col-sm-3 " >
+                <div class="col-xs-7 smalled pull-left" style="margin-left: -50px">
+                <p style="margin:0px;font-size: 4vw"><span class="smalled pull-left" onclick="openNav()">☰ MedizoneBD</span></p>
+                </div>
+                <div class="col-xs-2 smalled pull-left" style="margin-top: -10px;padding-bottom: 0px">
+                    <a href="{{URL::to('/show_cart')}}" class=" smalled" style="width: 4vw;">
+
+                        <?php $cartCollection = Cart::getContent();
+                        $count = $cartCollection->count();
+                        echo "<span class='item-number 'style=''  id='count'>".$count."</span>"
+                        ?>
+                        <svg class="cart-svg " width="4vw " height="4vw "  viewBox="0 0 16 16 ">
+                            <path d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86 " fill="#fff "></path>
+                        </svg>
+
+                    </a>
+                </div>
+                <div class="smalled col-xs-3 pull-right" >
+                    <?php $customer_id=Session::get('customer_id');
+                    $shipping_id= Session::get('shipping_id');
+                    $customer_name = DB::table('tb1_customer')->select('customer_name')->where('customer_id',$customer_id)->first();
+                    ?>
+                    <?php if($customer_id != NULL)
+                    {?>
+                    <div class="dropdown pull-right">
+                        <button class="btn dropdown-toggle pull-right" style="margin-top: -10px;background-color: green" type="button" data-toggle="dropdown" style="">
+                            <i class="fa fa-user" aria-hidden="true" style="font-size: 20px;color: white"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{URL::to('/profile')}}"><b>My Account</b></a></li>
+                            <li><a href="{{URL::to('/my_orders')}}"><b>My Orders</b></a></li>
+                            <li><a href="#"><b>My Wishlist</b></a></li>
+                            <li class="divider"></li>
+                            <li><a href="{{URL:: to('/customer_logout')}}"> <b>Sign Out</b></a></li>
+                        </ul>
+                    </div>
+                    <?php } else{ ?>
+                    <a class="btn  pull-right" title="Sign In" style="background-color: #1E7145;" href="{{URL::to('/login_check')}}" >
+                        <i class="fa fa-sign-in" aria-hidden="true" style="font-size: 25px;color: white"></i>
+
+                    </a>
+                        <?php } ?>
+                </div>
+                <a href="{{URL::to('/')}}" style="text-decoration: none;color: white"> <h3 class=" " style="margin:0px;"><span class="larger"><b>MedizoneBD</b></span></h3></a>
             </div>
 
-        <div class=" " style="margin-left: 10%; margin-right:  10%;padding-top: 20px" >
-                <div class="col-sm-2 col-lg-2 col-md-2 ">
-                    <div class="logo" style="margin-top: -55px">
-                        <a href='/' ><img src="{{URL:: to('frontend/images/home/logo.png')}}" alt="Logo" height="150px"></a>
-                    </div>
-                </div>
-                <div class="col-sm-5 col-lg-5 col-md-5">
-                    <div class="center">
-                        <form action="{{URL:: to('/search')}}" method="post">
-                            {{csrf_field()}}
-                            <div class="search_box" >
-                                <input type="text" name="product" placeholder="       Search Product . ."/>
-                                <button type="submit" style="margin-left: -45px; background-color: white;border: white">
-                                    <span class="fa fa-search "></span>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+            <div class="flipkart-navbar-search smallish col-sm-4  col-xs-10" style="margin-left: -30px">
+                <form action="{{URL:: to('/search')}}" method="post">
+                    {{csrf_field()}}
+                <div class="row  ">
+                    <input type="text" name="product" placeholder="Search..">
 
-                        <div class="col-sm-2 col-lg-2 col-md-2" style="margin-top: -10px">
-                            <div class="">
-                            <a href="{{URL::to('/upload_prescription')}}" >
-                                <button class="btn btn-primary example4 btn-success" style="height: 40px;">
-                                    <b>Upload Prescription</b>
-                                </button>
-                            </a>
-                        </div>
-                        </div>
+                </div>
+                </form>
+            </div>
+            <div class="smalled" style="margin-top: 46px">
+                <a  href="{{URL::to('/upload_prescription')}}" class="btn " style="padding-top: 10px;background-color: #1E7145" title="Upload Prescription">
+                    <span class="fa fa-upload" style="color: white;font-size: 30px;"></span></a>
+            </div>
 
-                        <div class="col-sm-1 col-lg-1 col-md-1 ">
-                            <div >
-                            <a href="{{URL::to('/show_cart')}}" class=""><img src="{{URL:: to('frontend/images/cart/cart.png')}}" style="height: 40px;">
-                                <span style="margin-left: -12px;">
-                                <?php $cartCollection = Cart::getContent();
+            <div class="col-sm-1  larger">
+                <a class="btn " title="upload prescription"  href="{{URL::to('/upload_prescription')}}" style="text-decoration: none; background-color:#1E7145;color: white">
+                    <span class="fa fa-upload"></span> Prescription
+                </a>
+            </div>
+
+            <div class=" larger col-sm-2 " >
+                <a href="{{URL::to('/show_cart')}}" class="cart-button pull-right" style="width: 100px;background-color: #1E7145;">
+                    <svg class="cart-svg " width="16 " height="16 " viewBox="0 0 16 16 ">
+                        <path d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86 " fill="#fff "></path>
+                    </svg> Cart
+                <?php $cartCollection = Cart::getContent();
                                 $count = $cartCollection->count();
-                                echo "<b style='font-size:large'>".$count."</b>" ?>
-                                </span> </a>
-                        </div>
-                        </div>
-                        <div class="col-sm-2 col-lg-2 col-md-2" style="margin-top: -10px">
-                            <div class="center">
-                            <?php $customer_id=Session::get('customer_id');
-                            $shipping_id= Session::get('shipping_id');
-                            $customer_name = DB::table('tb1_customer')->select('customer_name')->where('customer_id',$customer_id)->first();
+                   echo "<span class='item-number ' id='countlg'>".$count."</span>"
+                    ?>
+                </a>
+            </div>
 
-                            ?>
-                            <?php if($customer_id != NULL)
-                            {?>
-                                <div class="dropdown">
-                                    <button class="btn btn-primary example4 btn-success dropdown-toggle" type="button" data-toggle="dropdown" style="height: 40px">{{$customer_name->customer_name}}
-                                        <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="{{URL::to('/profile')}}"><b>My Account</b></a></li>
-                                        <li><a href="{{URL::to('/my_orders')}}"><b>My Orders</b></a></li>
-                                        <li><a href="#"><b>My Wishlist</b></a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="{{URL:: to('/customer_logout')}}"> Sign Out</a></li>
-                                    </ul>
-                                </div>
-                            <?php } else{ ?>
-
-                            <a href="{{URL:: to('/login_check')}}" class="center">
-                                <button class="btn btn-primary example4 btn-success" style="height: 40px"> <b>Sign in</b></button>
-                            </a>
-
-                            <?php } ?>
-                        </div>
+            <div class="col-sm-2 cart larger ">
+                <?php $customer_id=Session::get('customer_id');
+                $shipping_id= Session::get('shipping_id');
+                $customer_name = DB::table('tb1_customer')->select('customer_name')->where('customer_id',$customer_id)->first();
+                ?>
+                <?php if($customer_id != NULL)
+                {?>
+                    <div class="dropdown">
+                        <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown" style="height: 40px;background-color: #1E7145;">{{$customer_name->customer_name}}
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{URL::to('/profile')}}"><b>My Account</b></a></li>
+                            <li><a href="{{URL::to('/my_orders')}}"><b>My Orders</b></a></li>
+                            <li><a href="#"><b>My Wishlist</b></a></li>
+                            <li class="divider"></li>
+                            <li><a href="{{URL:: to('/customer_logout')}}"> <b>Sign Out</b></a></li>
+                        </ul>
                     </div>
-        </div>
-        </div>
-    </nav><!--/header-middle-->
+                    <?php } else{ ?>
+                <a class="cart-button2 "  href="{{URL::to('/login_check')}}" style="text-decoration: none;color: white; background-color: #1E7145;">
+                    <i class="fa fa-user" aria-hidden="true" style="font-size: 20px"></i>
+                    Login & Signup
+                </a>
+                    <?php } ?>
 
-    <div class="header-bottom" style="margin-top: 100px; background-color: wheat"><!--header-bottom-->
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mySidenav" class="sidenav">
+    <div class="container" style="background-color: white; padding-top: 30px;">
+        <a href="{{URL::to('/')}}" class=""style="font-size: 18px;color:black"><b>Home</b></a>
+        <a href="javascript:void(0)" class="closets" style="padding-top: 30px" onclick="closeNav()">×</a>
+    </div>
+    <ul class="" style="margin: 0 0 0 0">
+
+        <li class="dropdown"><a href="#" style="font-size: 18px;color: black"><b>Category</b><i class="fa fa-angle-down"></i></a>
+            <ul role="menu" class="sub-menu">
+                <?php
+                $all_published_category=DB::table('tb1_category')->where('publication_status',1)->get();
+                foreach ($all_published_category as $v_category){ ?>
+                <li><a style="font-size: 18px" href="{{URL::to('/product_by_category/'.$v_category->category_id)}}">{{$v_category->category_name}}</a></li>
+                <?php } ?>
+            </ul>
+        </li>
+
+        {{--                            <li><a href="404.html">404</a></li>--}}
+        <li><a style="font-size: 18px;color: black" href="/message_order"><b>Message Order</b></a></li>
+    </ul>
+</div>
+
+
+    <div class="header-bottom" style="margin-top: -25px; background-color: white"><!--header-bottom-->
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
+
                     <div class="mainmenu pull-left">
                         <ul class="nav navbar-nav collapse navbar-collapse">
                             <li><a href="{{URL::to('/')}}" class=""><b>Home</b></a></li>
@@ -226,16 +289,7 @@
                                      <?php } ?>
                                 </ul>
                             </li>
-                            <li class="dropdown"><a href="#"><b>Brand</b><i class="fa fa-angle-down"></i></a>
-                                <ul role="menu" class="sub-menu">
-                                    <?php
-                                    $all_published_manufacture=DB::table('tb1_manufacture')->where('publication_status',1)->get();
-                                    foreach ($all_published_manufacture as $v_manufacture){ ?>
-                                    <li><a href="{{URL::to('/product_by_manufacture/'.$v_manufacture->manufacture_id)}}"> {{$v_manufacture->manufacture_name}}</a></li>
-                                        <?php } ?>
-                                </ul>
-                            </li>
-{{--                            <li><a href="404.html">404</a></li>--}}
+
                             <li><a href="/message_order"><b>Message Order</b></a></li>
                         </ul>
                     </div>
@@ -340,7 +394,7 @@
         </div>
     </div>
 
-    <div class="footer-widget">
+    <div class="footer-widget" >
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
@@ -348,8 +402,8 @@
                         <h2>Contact Information</h2>
                         <ul class="">
                             <!--<li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong><span style="display: block; padding-left: 25px;"></span></p></li>-->
-                            <li><p style="font-size: medium"><i class="fa fa-phone"></i><strong>Phone:</strong><br>01300899200 <br> 01300899199</p></li>
-                            <li><p style="font-size: medium"><i class="fa fa-envelope-o"></i><strong> Email:</strong><br> <a href="mailto:info@epharma.com.bd" style="font-size: medium">info@medizonebd.com</a></p></li>
+                            <li><p style="font-size: medium"><i class="fa fa-phone"></i><strong>Phone:</strong><br>01788882131 <br> 01300899199</p></li>
+                            <li><p style="font-size: medium"><i class="fa fa-envelope-o"></i><strong> Email:</strong><br> <a href="mailto:info@medizonebd.com" style="font-size: medium">info@medizonebd.com</a></p></li>
                             <li><p style="font-size: medium"><i class="fa fa-clock-o"></i> <strong> Delivery Days/Hours:</strong><br> Everyday / 09:00 AM - 09:00 PM</p></li>
                         </ul>
                     </div>
@@ -373,7 +427,7 @@
                         <ul class="nav nav-pills nav-stacked">
                             <li><a href="/about_us"  style="font-size: medium">Company Information</a></li>
 {{--                            <li><a href="/">How to order</a></li>--}}
-                            <li><a href="/partners" style="font-size: medium">Partners</a></li>
+                            <li><a href="#" style="font-size: medium">Partners</a></li>
                             <li><a href="/terms" style="font-size: medium">Terms and Conditions</a></li>
                             <li><a href="/career" style="font-size: medium">Careers</a></li>
                             <li><a href="/contact" style="font-size: medium">FAQ</a></li>
@@ -386,7 +440,7 @@
                         <h2>Social Networks</h2>
                         <ul class="nav nav-pills nav-stacked">
                             <li><a href="https://www.facebook.com/Medi-Zone-BD-103311614439996/" target="_blank" style="font-size: medium"><i class="fa fa-facebook "></i> Facebook </a></li>
-                            <li><a href="#" target="_blank" style="font-size: medium"><i class=" fa fa-twitter" ></i>Twitter</a></li>
+                            <li><a href="https://www.twitter.com/medizonebd" target="_blank" style="font-size: medium"><i class=" fa fa-twitter" ></i>Twitter</a></li>
                             <li><a href="#" target="_blank" style="font-size: medium"><i class="fa fa-google-plus" ></i>Google Plus</a></li>
                             <li><a href="#" target="_blank" style="font-size: medium"><i class="fa fa-youtube"></i>Youtube</a></li>
                         </ul>
@@ -401,7 +455,7 @@
         <div class="container">
             <div class="row">
                 <p class="pull-left">Copyright © 2019 MediZoneBD Inc. All rights reserved.</p>
-                <p class="pull-right">Developed by: <span><a target="_blank" href="http://www.amirsohel.me"><b>Amir Sohel</b></a></span></p>
+                <p class="pull-right">Developed by: <a target="_blank" href="http://www.amirsohel.me"><b>Amir Sohel</b></a></p>
             </div>
         </div>
     </div>
@@ -414,5 +468,7 @@
 <script src="{{asset('frontend/js/price-range.js')}}"></script>
 <script src="{{asset('frontend/js/jquery.prettyPhoto.js')}}"></script>
 <script src="{{asset('frontend/js/main.js')}}"></script>
+
+
 </body>
 </html>

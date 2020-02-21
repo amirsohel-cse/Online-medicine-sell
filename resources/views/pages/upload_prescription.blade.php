@@ -8,8 +8,11 @@
                     <div class="box-content">
                         <div class="col-xs-12" style="border-bottom: 1px solid #eee; margin-bottom: 10px;">
                             <div class="form-group">
-                                <span style="font-size: 16px; line-height: 35px; color: #0088cc" class="pull-left">Prescription Upload</span>
+                                <span style="font-size: 20px; line-height: 35px; color: green" class="pull-left"><b>Prescription Upload</b></span>
                             </div>
+
+                        </div>
+                        <div class="alert-block">
                             <p class="alert-success" >
                                 <?php
                                 $message = Session::get('message');
@@ -25,9 +28,9 @@
 
                         <form role="form" method="post" action="{{url('/save_prescription')}}" enctype="multipart/form-data">
                             {{csrf_field()}}
-                            <div class="col-sm-12">
+                            <div class="col-sm-12" style="background-color: white">
                                 <div class="form-content">
-                                    <h3 style="color: #0088cc !important" class="heading-text-color font-weight-normal">User Info</h3>
+                                    <h3 style="color: green !important" class="heading-text-color font-weight-normal">User Info</h3>
 
                                     <div class="form-group">
                                         <div class="col-sm-6 col-xs-12">

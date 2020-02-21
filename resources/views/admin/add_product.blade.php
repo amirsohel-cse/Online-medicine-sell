@@ -40,13 +40,6 @@
                     {{csrf_field()}}
                     <fieldset>
                         <div class="control-group">
-                            <label class="control-label" for="date01">Product Name</label>
-                            <div class="controls">
-                                <input type="text" class="text" name="product_name" required="">
-                            </div>
-                        </div>
-
-                        <div class="control-group">
                             <label class="control-label" for="selectError3">Product Category</label>
                             <div class="controls">
                                 <select id="selectError3" name="category_id">
@@ -61,41 +54,60 @@
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="selectError3">Manufacture Name</label>
-                            <div class="controls">
-                                <select id="selectError3" name="manufacture_id">
-                                    <option> Select Category </option>
-                                    <?php
-                                    $all_published_manufacture=DB::table('tb1_manufacture')->where('publication_status',1)->get();
-                                    foreach ($all_published_manufacture as $v_manufacture){ ?>
-                                    <option value="{{$v_manufacture->manufacture_id}}">{{$v_manufacture->manufacture_name}}</option>
-                                    <?php } ?>
-                                </select>
-                            </div>
-                        </div>
-
-
-
-                        <div class="control-group hidden-phone">
-                            <label class="control-label" for="textarea2">Product short Description </label>
-                            <div class="controls">
-                                <textarea class="cleditor" name="product_short_description" rows="3"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="control-group hidden-phone">
-                            <label class="control-label" for="textarea2">Product Long Description </label>
-                            <div class="controls">
-                                <textarea class="cleditor" name="product_long_description" rows="3" ></textarea>
-                            </div>
-                        </div>
-
-                        <div class="control-group">
-                            <label class="control-label" for="date01">Product Price</label>
+                            <label class="control-label" for="">Product Price</label>
                             <div class="controls">
                                 <input type="text" class="text" name="product_price" required="">
                             </div>
                         </div>
+                        <div class="control-group">
+                            <label class="control-label" for="">Product Name</label>
+                            <div class="controls">
+                                <input type="text" class="text" name="product_name" required="">
+                            </div>
+                        </div>
+
+
+
+                        <div class="control-group hidden-phone">
+                            <label class="control-label" for="">Generic </label>
+                            <div class="controls">
+                                <input type="text" class="text" name="generic" >
+                            </div>
+                        </div>
+
+                        <div class="control-group hidden-phone">
+                            <label class="control-label" for="">Type </label>
+                            <div class="controls">
+                                <input type="text" class="text" name="type" >
+                            </div>
+                        </div>
+
+
+                        <div class="control-group">
+                            <label class="control-label" for="">Quantity</label>
+                            <div class="controls">
+                                <input type="text" class="text" name="quantity" >
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="">Pieces Per Pata</label>
+                            <div class="controls">
+                                <input type="text" class="text" name="pieces_per_pata" >
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="">Dose</label>
+                            <div class="controls">
+                                <input type="text" class="text" name="dose">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="">Product Size</label>
+                            <div class="controls">
+                                <input type="text" class="text" name="product_size" >
+                            </div>
+                        </div>
+
 
                         <div class="control-group">
                             <label class="control-label" for="fileInput">Product Image</label>
@@ -103,21 +115,10 @@
                                 <input class="input-file uniform_on" id="fileInput" name="product_image" type="file">
                             </div>
                         </div>
-                        <div class="control-group">
-                            <label class="control-label" for="date01">Product Size</label>
-                            <div class="controls">
-                                <input type="text" class="text" name="product_size" required="">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="date01">Product Color</label>
-                            <div class="controls">
-                                <input type="text" class="text" name="product_color">
-                            </div>
-                        </div>
+
 
                         <div class="control-group hidden-phone">
-                            <label class="control-label" for="textarea2">Publication Status </label>
+                            <label class="control-label" for="">Publication Status </label>
                             <div class="controls">
                                 <input type="checkbox" name="publication_status" value="1">
                             </div>

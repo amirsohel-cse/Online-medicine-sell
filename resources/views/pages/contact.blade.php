@@ -1,43 +1,6 @@
 @extends('layout')
 @section('content')
 
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta http-equiv="content-script-type" content="text/javascript">
-    <meta name="keywords" content="bangladesh, online pharmacy, pharmacy, bd, dhaka, home delivery, ousud, oshud, osud, medicine, oushud, oshud, oshudh, ousudh, oushodh">
-    <meta name="description" content="medizonebd is an online pharmacy that offers professional home delivery services for health care products, with a focus on quality and customer care.">
-
-    <meta name="msvalidate.01" content="64EFA2BC13549166A41E1768617244F3" />
-
-    <meta property="og:url" content="http://www.medizonebd"/>
-    <meta property="og:site_name" content="www.medizonebd"/>
-    <meta property="og:title" content="medizonebd | Your Home Pharmacy"/>
-    <meta property="og:description" content="medizonebd is an online pharmacy that offers professional home delivery services for health care products, with a focus on quality and customer care."/>
-    <meta property="og:image" content="http://medizonebd/preview_img.png">
-    <meta property="fb:app_id" content="518304478343147"/>
-
-    <title>medizonebd | Your Home Pharmacy</title>
-    <link rel="shortcut icon" href="/favicon.ico"/>
-
-    <link href="{{asset('frontend/css/application-ca180d118330360bc7396b7e70591701.css')}}" rel="stylesheet">
-
-    <meta content="authenticity_token" name="csrf-param" />
-    <meta content="jv8q++ojF/eWESZwYuBRbD7Beu14s6wVDUJcctfyyoU=" name="csrf-token" />
-
-
-    <!-- Facebook Pixel Code -->
-    <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=208106989571902&ev=PageView&noscript=1" />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
-
-</head>
 <body>
 <script src="{{asset('frontend/js/application-2df3b748c584aae5817f3a89a813d11d.js')}}"></script>
 
@@ -211,8 +174,7 @@
                         </div>
                     </div>
                 </div>
-
-
+                
             </div>
 
         </div>
@@ -235,7 +197,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <div class="panel panel-default">
                     <div class="panel-heading">

@@ -9,14 +9,14 @@
         </li>
         <li>
             <i class="icon-edit"></i>
-            <a href="#">Add Category</a>
+            <a href="#">Add Product</a>
         </li>
     </ul>
 
     <div class="row-fluid sortable">
         <div class="box span12">
             <div class="box-header" data-original-title>
-                <h2><i class="halflings-icon edit"></i><span class="break"></span>Edit Category</h2>
+                <h2><i class="halflings-icon edit"></i><span class="break"></span>Edit Product</h2>
                 <div class="box-icon">
                     <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
                     <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
@@ -36,29 +36,95 @@
                 ?>
             </p>
             <div class="box-content">
-                <form class="form-horizontal" action="{{url('/update_product',$product_info->product_id)}}" method="post">
+                <form class="form-horizontal" action="{{url('/update_product/'.$product_info->product_id)}}" method="post" enctype="multipart/form-data">
                     {{csrf_field()}}
                     <fieldset>
                         <div class="control-group">
-                            <label class="control-label" for="date01">Category Name</label>
+                            <label class="control-label" for="selectError3">Product Category</label>
                             <div class="controls">
-                                <input type="text" class="text" name="category_name" value="{{$category_info->category_name}}">
+                                <select id="selectError3" name="category_id" required=" ">
+                                    <option required=" "> Select Category </option>
+                                    <?php
+                                    $all_published_category=DB::table('tb1_category')->where('publication_status',1)->get();
+                                    foreach ($all_published_category as $v_category){ ?>
+                                    <option value="{{$v_category->category_id}}">{{$v_category->category_name}}</option>
+                                    <?php } ?>
+
+                                </select>
                             </div>
                         </div>
-                        <div class="control-group hidden-phone">
-                            <label class="control-label" for="textarea2">Category Description </label>
+                        <div class="control-group">
+                            <label class="control-label" for="">Product Price</label>
                             <div class="controls">
-                                <textarea class="cleditor" name="category_description" rows="3">{{$category_info->category_description}}</textarea>
+                                <input type="text" class="text" value="{{$product_info->product_price}}" name="product_price" required="">
                             </div>
                         </div>
+                        <div class="control-group">
+                            <label class="control-label" for="">Product Name</label>
+                            <div class="controls">
+                                <input type="text" value="{{$product_info->product_name}}" class="text" name="product_name" required="">
+                            </div>
+                        </div>
+
+
+
                         <div class="control-group hidden-phone">
-                            <label class="control-label" for="textarea2">Publication Status </label>
+                            <label class="control-label" for="">Generic </label>
+                            <div class="controls">
+                                <input type="text" value="{{$product_info->generic}}" class="text" name="generic" >
+                            </div>
+                        </div>
+
+                        <div class="control-group hidden-phone">
+                            <label class="control-label" for="">Type </label>
+                            <div class="controls">
+                                <input type="text" value="{{$product_info->type}}" class="text" name="type" >
+                            </div>
+                        </div>
+
+
+                        <div class="control-group">
+                            <label class="control-label" for="">Quantity</label>
+                            <div class="controls">
+                                <input type="text" value="{{$product_info->quantity}}" class="text" name="quantity" >
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="">Pieces Per Pata</label>
+                            <div class="controls">
+                                <input type="text"  value="{{$product_info->pieces_per_pata}}" class="text" name="pieces_per_pata" >
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="">Dose</label>
+                            <div class="controls">
+                                <input type="text" value="{{$product_info->dose}}" class="text" name="dose">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="">Product Size</label>
+                            <div class="controls">
+                                <input type="text" value="{{$product_info->size}}" class="text" name="product_size" >
+                            </div>
+                        </div>
+                          <input type="hidden" value="{{$product_info->product_image}}" name="image_url">
+
+                        <div class="control-group">
+                            <label class="control-label"  for="fileInput">Product Image</label>
+                            <div class="controls">
+                                <input  value="{{$product_info->product_image}}" class="input-file uniform_on" id="fileInput" name="product_image" type="file">
+                            </div>
+                        </div>
+
+
+                        <div class="control-group hidden-phone">
+                            <label class="control-label" for="">Publication Status </label>
                             <div class="controls">
                                 <input type="checkbox" name="publication_status" value="1">
                             </div>
                         </div>
                         <div class="form-actions">
-                            <button type="submit" class="btn btn-primary">Save Category</button>
+                            <button type="submit" class="btn btn-primary">Update Product</button>
                             <button type="reset" class="btn">Cancel</button>
                         </div>
                     </fieldset>

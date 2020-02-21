@@ -1,7 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e628ea9c-88b2-4d77-acea-3d83febd6b31" name="Default Changelist" comment="" />
+    <list default="true" id="e628ea9c-88b2-4d77-acea-3d83febd6b31" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/prescription_image/F2b1Zb9MTW7RVFGYrdonjjdol9OGzKn98FZPHRnX.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/prescription_image/LINCARwT4MSdBaNhMSYPjVXfXbw7exFIlFsiuoVA.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/prescription_image/dJh2kGjpxWHxbhjOP3CMYgzap32d5td8Pmdp9I2N.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/prescription_image/lmq5ffpigqsifydg2Hzy6BTr6vay5cAl5qUCaaSy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/prescription_image/n1vOIYONKkROiZT1eqINllguH3WcxQhmkEaPgvy4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/prescription_image/ot4cdEuwhBiVkoSEYmXk2udmRoRNFESa5JjBrpwf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/prescription_image/vFqNr5bwGRA93wysLpTytjP5uOsi7dNFA3F79jJm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/prescription_image/wIWxPN70rOcYGC150nSNbxk94TA6tgIXrdfoBlL0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/2Gseyyc2HJYMyLZZiBfxiEE08hHSLZHpBa31LwAb.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/4cF3XwZlev4Zo05kStoOAMLoBF1lFrSo7vAfxjyz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/8X3PcIAmcpSSaUtS6EY9sh8WxZvM9YZyOgNrD2wZ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/8wjvgNIgrKOfAbRP5Cg00QDAhhxqHtcbKgkLBOeg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/Ae0ZJRWiZgqgCdWjygb2zPos6c4HTHuc6pWQUTwy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/CkkY0aGZ0JE5MebdFQs2tLebM08xenuiqrlq1amy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/CmNp2IPbdFoi75l8dvXZ82lWzG9l1yYibyAE7S99.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/ImHBkgYdFFj4ByFRfgW5MRfylMlmbMtsqMjWaNHk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/McgB27ENJMrk2qFYJZJdzavmIabGFa2rygwDhdvK.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/PGd8T4T78o6CghUpXWaDpoSeNe7PMj1sXN6AhQ4w.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/QKcC6fQmcBBbFD4VoX61WQR2OaifggXp0moUe8PV.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/QPK6R4rBiQqBXANDpwV0OT54efFnaiNCNsLLu6d5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/RRyI2Yj9DPmiqyDKMzIscWtKpeVaALkRpbb6sctW.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/U1DokWSEzOM8qAoyKxb5wAmRGir9keOyuawIA5JQ.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/V0PsaeN6VWElITNJ1OOCpYFNf7s7Ql0XOBhj4RBn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/VbwpkFYnmMtx5i4lb2GtvuNMxiiOATuvms34bQxV.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/Y0EJxAniN0YMx2PrSfacJFT2rDUEEDQjoXHTPfTc.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/Ztm4oi2MXqxYYQ2Y6a5v2403h5XXyNcX5ZBhaEsx.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/cLwjaKXExBR6J9cZYKSlSHwuuH0pv9BR1JtQ2f0z.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/djMd58PO66xjQFiNddocyXVx66SGARbX4V6dmS6H.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/pr2ecfcUf2M0mL5pUl21ueyRcIXGWBlVXTWb0jhm.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/qzPoWhfaexEuwe2QJYhVNtpHaIjLjeydfkGjach7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/r9Bm2HGeWPNgAHyLAM93wSc6aWThjDR0hZ1hoEo8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/sKCnuMKbxeAjWhmsLyS0HNMSTg5NmNV88KfCuKsC.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/uqMTiJqZ2dtN3clx4iMfb4IIfsqb2GdSC0l5cnQD.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/vFhcmjGEBW2lA41QRme4YON2Jemyy3nzTzz1A2Ny.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/vy5ueYGvQgTOsqyhO6xwg4EhFZxPRIOI9eylRwUP.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/ybHFGxbapk2E4vTkReBoRNTlEtL1rXmHNjZ8eYdp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/product_image/zfJcwlIR4SuhkLffYrjTlNcZWAVNehjNdE31txmC.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/slider_image/o3XnJjioy65SCgqcXkO1SLwav9O5FjMZBUPx36TM.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/slider_image/versnS3OLbGy8lcy7F32CFz3T2UqnpZLO3RL3SuZ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/manage_prescription.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/navbar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/modal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/medicineZone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/medicineZone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_02_174313_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_02_174313_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/2So94NclWCiNyr7mbr4oyRl3fj59VFntBzoQ8TRB.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/32owUhRereU6Qtw4gymBYFPM9LtHyrqiEBKiiQDg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/3B0WTsyiV5CR1PnX9Vtrx9jz7hvWzFXa8nJlZoUq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/3l2JlQQjTvwQtHa9tSBLot4WDmlRfr0HCfCxXWvP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/3tRCMxp8KCi8QDg5GPgcxrr6f6fbnPnOW7Ln5GMh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/72P1bICWJC2yGamqXtkTzdwXwbhYZNu8JT96noPJ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/7oSZU696sAl4hcJKPPjCB877oT0rV89L4Dy27yqi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/8k5VhtUDcv7Li5XtuPvwOhhr2tHPQVzfNOD0Ig8B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/AKYm7Y1JruB5wPQwLxKrPSrKH2lWA5rvDWkEVyNp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/AjxBNDKioOriEUWlP515IeqBAggwcuVnTC5ou1Mj.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/BhlZG4F9hZ1HjUj9CAB9fmNNShQznr3ueDMolovT.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/BjbKUhXIY597kllbztudKDqQ8zgEHUoIJJnFQ89R.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/BwA0OHucBlLAnITIuZV6FzvJ7F8VyJFojsFtiZiI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/CF68dqoiCE6YoCsbGuGezxRDOKtANXo7Uxcqry7U.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/DhfbZbbyvrAKuJzej0hxIPgh8pjCwhiTpYYrcqp6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/EdstT5AfxjF9djvm8Ev05Jo3Y1eQKJD2IPjP8Syt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/GpFDlp3qbhaQpsr4ErxRNFTAj72Nn6m69CwSXMw5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/H0AQqYtUEPRrURoWbVo9RLOVfo4rJAYfuHMaYhAg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/H5GoLmY3ykHZLpmmrl0jgsZ9ioXImKOKhTwzWi1W.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/IgSEEZxgmvSnunYRgBLnTAlx4QADc1MSLZCO90RI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/Jq3d5DfRkuKWzN5SQ8492j38l5kB6xTa2pfId65l.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/LI7Jy3ATyKDH7oJqJsdEbLQKMUzMevys7CcalIyE.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/ODKoEBk1DayJcbVc2mU9wzbkbofgiLKruo8wZIDl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/OLME7yzGySi3X5w8gTzyJp71Z9BkORD61P4FAHxy.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/OSsxBe2MZQGVhKjfMBre8dQdZCnlyqUyyMxJ8hox.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/PDvvSAHFDd3U8vkIyjSOTbs5gSomB6LrkBgJHGQJ.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/QNddDCn3HBGVX9RoKMVALOTxAgy739UUncpbLpxH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/Sid4rV4ATq8bknj3pDDOxgkXuLLkKjYKLT6nTixe.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/TteFvWpFRA9GpDhyX6Sk6IdhtaK6CmdBrIrKpxhG.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/U3uWqEf9NOGhMMC4W5iWr47z0Arv9lWX0WfAVGip.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/UYLtEH8zxv7GA0e5FC3zeRfypjeHnVANoKFUdi7H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/Upqsh6BNCvzKWKT3POAjyjPKTt3U7yOkYM043skO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/Xaxqe0fuPx4ves8SNzsbOcC07q6fhTztn8xrdYrz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/XvJWnMOcja8gpbx4Wp7fK49MN7YFbNRmx7iFdM25.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/dV195Ttd8CDth9W1MyBOIIUOnymzfmXVtIBE0RAq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/dqEKiJ0xE5enIk0RqUfj99nhAhu5a2UZ2mFw5Kez.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/f3bzjmA1eEFdECkwyEQjhUPxc5GKpFAiypHJhgZp.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/fcygS9Fx0sn6h2mVfoq24QGfrJ0mviQV477jMG2a.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/gU6lqc9ipxTcr4eEWtT2AvmUNUpA2yrSIvvfzzEr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/jVxmDHjVv0EZSNoHGMTfkPPZWlcWOW2Xk1DFRAGI.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/lAUYhykAp9POrtYwuAT1oC5qdqj0gX59hYq00ZiG.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/li7md2KHoYjsREjmsXViuZnApTj5VyRQVbZ7TlnG.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/mujInWIwxR5qrgbc3b9C2x5uplVQtCHzb8t7AAXZ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/pGm4T5b1ShLAXEm6WBndJ5aARCUP4EOuRZ9zZTQH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/pNACjbMog4qxCuLQAt1XebfBnGBYvDW3FquRVkDm.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/q30yEkBy4OvZvgNewoHAddlLbYkGMcsv66RKHGOc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/qIfAyD1BabEqhWAXa8eqSFiuUoUBWjI8YSB9oCDW.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/qcq0J3fFCZ2x1z21CleXyhtwWlh3WjSxBrS9kvur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/sUAIqlZwkoIZiyeTeeMZtuuDOJ5o04CgRe8Gekoy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/t0CAHteLqVa3re49f58rnFnLmu6nnCtXf0pAr8Do.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/ulrvJhTO9zhboDskXC1xHPYV6011gzorMObdvxRF.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/uz9TyIkJFSwt0mzAYhCOZVZ5ynNuaKeqj3KezpA9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/wIZ5fDaJbamFULNNw7v45gp8tXT8V8u1vmJl59Ys.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/ygT6YmXKjzZzHOjz0yCWflq3R29jJVH9T4GJWtUU.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product_image/zya7Thj4ACf65z3UrMK7pDCeM9qO9McQq8OaKG3t.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/add_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/add_product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/all_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/all_product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/edit_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/edit_product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/manage_order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/manage_order.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/view_order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/view_order.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/about_us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/about_us.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/add_to_cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/add_to_cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/handcash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/handcash.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/home_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/home_content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/messege_order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/messege_order.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/my_orders.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/my_orders.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/product_by_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/product_by_category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/product_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/product_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/search_result.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/search_result.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/terms.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/terms.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/upload_prescription.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/upload_prescription.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/slider.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +159,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -119,7 +254,12 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1RTlOMBzTjLcqreaGkrDrWBuYyL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -204,11 +344,64 @@
       <workItem from="1574837934648" duration="2690000" />
       <workItem from="1574868252474" duration="1313000" />
       <workItem from="1574966229097" duration="1381000" />
-      <workItem from="1575014817054" duration="2841000" />
+      <workItem from="1575014817054" duration="3440000" />
+      <workItem from="1575109496148" duration="1855000" />
+      <workItem from="1575207116493" duration="966000" />
+      <workItem from="1575211880093" duration="2474000" />
+      <workItem from="1575279764134" duration="862000" />
+      <workItem from="1575440633865" duration="6732000" />
+      <workItem from="1575567089002" duration="18652000" />
+      <workItem from="1575611594591" duration="551000" />
+      <workItem from="1575892625324" duration="409000" />
+      <workItem from="1577288711926" duration="1212000" />
+      <workItem from="1577356429696" duration="1721000" />
+      <workItem from="1577365137591" duration="21252000" />
+      <workItem from="1577427926011" duration="4270000" />
+      <workItem from="1577442634921" duration="3978000" />
+      <workItem from="1577450776336" duration="17524000" />
+      <workItem from="1577516339535" duration="36417000" />
+      <workItem from="1577610672488" duration="22520000" />
+      <workItem from="1577643348058" duration="54000" />
+      <workItem from="1578416450209" duration="2000" />
+      <workItem from="1578504923324" duration="992000" />
+      <workItem from="1578667349831" duration="438000" />
+      <workItem from="1578667871321" duration="208000" />
+      <workItem from="1578760978143" duration="294000" />
+      <workItem from="1578828770209" duration="77000" />
+      <workItem from="1578937258242" duration="1329000" />
+      <workItem from="1579239139179" duration="1437000" />
+      <workItem from="1579331509467" duration="4727000" />
+      <workItem from="1579884573443" duration="1261000" />
+      <workItem from="1580487608685" duration="33442000" />
+      <workItem from="1580539052371" duration="6291000" />
+      <workItem from="1580548379955" duration="8829000" />
+      <workItem from="1580567198915" duration="16644000" />
+      <workItem from="1580754617674" duration="11290000" />
+      <workItem from="1580765968927" duration="981000" />
+      <workItem from="1580766996759" duration="489000" />
+      <workItem from="1580839978947" duration="918000" />
+      <workItem from="1580841192847" duration="163000" />
+      <workItem from="1580844692192" duration="108000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
